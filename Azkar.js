@@ -77,7 +77,9 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
     var select=document.getElementById("tahleel_times");
     var strvalue=select.options[select.selectedIndex].value;
     var value=parseInt(strvalue);
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        document.getElementById("button25").value = value
+    }
     else{
         document.getElementById("button24").value = value+1;
     }
@@ -96,7 +98,9 @@ document.getElementById('tasbeh_times').addEventListener("change",function chang
     var select=document.getElementById("tasbeh_times");
     var strvalue=select.options[select.selectedIndex].value;
     var value=parseInt(strvalue);
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        document.getElementById("button25").value = value;
+    }
     else{
         document.getElementById("button25").value = value+1;
     }
