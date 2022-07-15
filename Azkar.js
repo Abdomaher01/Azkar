@@ -72,8 +72,6 @@ function refresh_element(value,buttonid){
     else{
         document.getElementById(buttonid).value=101;
     }
-
-
 }
 document.getElementById('tahleel_times').addEventListener("change",function changevalue(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){
@@ -84,6 +82,7 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
             document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
             document.getElementById("tahleel").innerHTML= "مئة مرة";
             document.getElementById("tahleel").className= "hundred";
+            
         }
         else{
             document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('ten','button24')");
