@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>Azkar Website</title>
+        <link rel="stylesheet" href="Azkar.css">
+        <link rel="icon" href="img/download.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <header>
+            <button onClick="window.location.reload()" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+            <h1></h1><br>
+            <span id="rangespan">حجم الخط</span><br>
+            <input type="range" min="1" max="100" step="1" value="50" id="myrange">
+            <nav>
+                <a href="AzkarAlmasaa.html">أذكار المساء</a>
+                <a href="AzkarAlsabah.html" id="active">أذكار الصباح</a>
+            </nav>
+        </header>
+        <main id="checkempty">
+            <div id="section1" onclick="decrementdiv('section1')">
+                <button onclick="refresh_element('one','button1')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <span>سورة الفاتحة</span><br>
+                أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+                <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ (1) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (2) الرَّحْمَنِ الرَّحِيمِ (3) مَالِكِ يَوْمِ الدِّينِ (4) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (5) اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ (6) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (7)</p>
+                <input type="button" value="1" id="button1" class="number"><br>
+            </div>
+            <div id="section2" onclick="decrementdiv('section2')">
+                <button onclick="refresh_element('one','button2')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <span>اية الكرسي</span><br>
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ<br>
+                <p>اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ</p>
+                <input type="button" value="1" id="button2" class="number"><br>
+            </div>
+            <div id="section3" onclick="decrementdiv('section3')">
+                <button onclick="refresh_element('three','button3')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <span>سورة الاخلاص</span><br>
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ<br>
+                <p>قُلْ هُوَ اللَّهُ أَحَدٌ (1) اللَّهُ الصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ (4)</p>
+                <input type="button" value="3" id="button3" class="number"><br>
+            </div>
+            <div id="section4" onclick="decrementdiv('section4')">
+                <button onclick="refresh_element('three','button4')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <span>سورة الفلق</span> <br>
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ<br>
+                <p>قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (1) مِنْ شَرِّ مَا خَلَقَ (2) وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ (4) وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ (5)</p>
+                <input type="button" value="3" id="button4" class="number"><br>
+            </div>
+            <div id="section5" onclick="decrementdiv('section5')">
+                <button onclick="refresh_element('three','button5')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <span>سورة الناس</span><br>
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ<br>
+                <p>قُلْ أَعُوذُ بِرَبِّ النَّاسِ (1) مَلِكِ النَّاسِ (2) إِلَهِ النَّاسِ (3) مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (4) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (5) مِنَ الْجِنَّةِ وَالنَّاسِ (6)</p>
+                <input type="button" value="3" id="button5" class="number"><br>
+            </div>
+            <div id="section6" onclick="decrementdiv('section6')">
+                <button onclick="refresh_element('one','button6')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <span>دعاء سيد الاستغفار</span><br>
+                <p>اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي؛ فَاغْفِرْ لِي؛ فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلا أنتَ</p>  
+                <input type="button" value="1" id="button6" class="number"><br>
+            </div>
+            <div id="section7" onclick="decrementdiv('section7')">
+                <button onclick="refresh_element('one','button7')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر</p>
+                <input type="button" value="1" id="button7" class="number"><br>
+            </div>
+            <div id="section8" onclick="decrementdiv('section8')">
+                <button onclick="refresh_element('one','button8')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه</p>
+                <input type="button" value="1" id="button8" class="number"><br>
+            </div>
+            <div id="section9" onclick="decrementdiv('section9')">
+                <button onclick="refresh_element('one','button9')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>أَصْبَـحْـنا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ</p>
+                <input type="button" value="1" id="button9" class="number"><br>
+            </div>
+            <div id="section10" onclick="decrementdiv('section10')">
+                <button onclick="refresh_element('one','button10')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا ، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ النُّـشُور</p>
+                <input type="button" value="1" id="button10" class="number"><br>
+            </div>
+            <div id="section11" onclick="decrementdiv('section11')">
+                <button onclick="refresh_element('one','button11')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>اللّهُـمَّ ما أَصْبَـَحَ بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر</p>
+                <input type="button" value="1" id="button11" class="number"><br>
+            </div>
+            <div id="section12" onclick="decrementdiv('section12')">
+                <button onclick="refresh_element('one','button12')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي</p>
+                <input type="button" value="1" id="button12" class="number"><br>
+            </div>
+            <div id="section13" onclick="decrementdiv('section13')">
+                <button onclick="refresh_element('one','button13')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا</p>
+                <input type="button" value="1" id="button13" class="number"><br>
+            </div>
+            <div id="section14" onclick="decrementdiv('section14')">
+                <button onclick="refresh_element('one','button14')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِرْكِهِ ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم</p>
+                <input type="button" value="1" id="button14" class="number"><br>
+            </div>
+            <div id="section15" onclick="decrementdiv('section15')">
+                <button onclick="refresh_element('one','button15')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="one">مرة واحدة</span><br>
+                <p>يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلْنِي إلَى نَفْسِي طَـرْفَةَ عَيْن</p>
+                <input type="button" value="1" id="button15" class="number"><br>
+            </div>
+            <div id="section16" onclick="decrementdiv('section16')">
+                <button onclick="refresh_element('three','button16')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <p>بِسـمِ اللهِ الذي لا يَضُـرُّ مَعَ اسمِـهِ شَيءٌ في الأرْضِ وَلا في السّمـاءِ وَهـوَ السّمـيعُ العَلـيم</p>
+                <input type="button" value="3" id="button16" class="number"><br>
+            </div>
+            <div id="section17" onclick="decrementdiv('section17')">
+                <button onclick="refresh_element('three','button17')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <p>رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً</p>
+                <input type="button" value="3" id="button17" class="number"><br>
+            </div>
+            <div id="section18" onclick="decrementdiv('section18')">
+                <button onclick="refresh_element('three','button18')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <p>سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه</p>
+                <input type="button" value="3" id="button18" class="number"><br>
+            </div>
+            <div id="section19" onclick="decrementdiv('section19')">
+                <button onclick="refresh_element('three','button19')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <p>اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ</p>
+                <input type="button" value="3" id="button19" class="number"><br>
+            </div>
+            <div id="section20" onclick="decrementdiv('section20')">
+                <button onclick="refresh_element('three','button20')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="three">ثلاث مرات</span><br>
+                <p>اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ</p>
+                <input type="button" value="3" id="button20" class="number"><br>
+            </div>
+            <div id="section21" onclick="decrementdiv('section21')">
+                <button onclick="refresh_element('four','button21')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="four">أربع مرات</span><br>
+                <p>اللّهُـمَّ إِنِّـي أَصْبَـحْتُ أُشْـهِدُك ، وَأُشْـهِدُ حَمَلَـةَ عَـرْشِـك ، وَمَلَائِكَتَكَ ، وَجَمـيعَ خَلْـقِك ، أَنَّـكَ أَنْـتَ اللهُ لا إلهَ إلاّ أَنْـتَ وَحْـدَكَ لا شَريكَ لَـك ، وَأَنَّ ُ مُحَمّـداً عَبْـدُكَ وَرَسـولُـك</p>
+                <input type="button" value="4" id="button21" class="number"><br>
+            </div>
+            <div id="section22" onclick="decrementdiv('section22')">
+                <button onclick="refresh_element('seven','button22')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="seven">سبع مرات</span><br>
+                <p>حَسْبِـيَ اللّهُ لا إلهَ إلاّ هُوَ عَلَـيهِ تَوَكَّـلتُ وَهُوَ رَبُّ العَرْشِ العَظـيم</p>
+                <input type="button" value="7" id="button22" class="number"><br>
+            </div>
+            <div id="section23" onclick="decrementdiv('section23')">
+                <button onclick="refresh_element('ten','button23')" class="refresh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="ten">عشر مرات</span><br>
+                <p>اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد</p>
+                <input type="button" value="10" id="button23" class="number"><br>
+            </div>
+            <div id="section24" onclick="decrementdiv('section24')">
+                <button onclick="refresh_element('ten','button24')" class="refresh" id="refresh_tahleel"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="ten" id="tahleel">عشر مرات</span><br>
+                <p>لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءِ قَدِيرِ</p>
+                <p>من قالها مئة مرة فهو أفضل</p>
+                <select name="tahleel_times" id="tahleel_times" class="number">
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                </select>
+                <input type="button" value="10" id="button24" class="number"><br>
+            </div>
+            <div id="section25" onclick="decrementdiv('section25')">
+                <button onclick="refresh_element('hundred','button25')" class="refresh" id="refresh_tasbeh"><img src="img/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="اعادة التحميل"></button>
+                <span class="hundred" id="tasbeh">مئة مرة</span><br>
+                <p>سُبْحـانَ اللهِ وَبِحَمْـدِهِ</p>
+                <select name="tasbeh_times" id="tasbeh_times" class="number">
+                    <option value="100">100</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" value="100" id="button25" class="number"><br>
+            </div>
+        </main>
+        <script src="Azkar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+header{
+    background-color: gold;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    opacity: 95%;
+}
+header:hover{
+    opacity: 100%;
+}
+h1{
+    color: gray;
+    padding: 20px;
+    width: 478px;
+    height: 73px;
+    display: inline-block;
+    background-color: gold;
+    background-image: url("img/head.png");
+    border-radius: 15px;
+    margin-left: 55px;
+}
+body{
+    font-family: 'Almarai', sans-serif;
+    text-align: center;
+    font-size:x-large;
+}
+a{
+    text-decoration: none;
+    color: gold;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 15px;
+}
+div{
+    padding-top: 8px;
+    background-color: gray ;
+    border-radius: 15px;
+    margin-top: 30px;
+    opacity: 95%;
+}
+select{
+    border-radius: 7px;
+    font-size: x-large;
+    background-color: green;
+    border: 2px rgb(138, 2, 2) solid;
+}
+select:hover{
+    background-color: rgb(138, 2, 2);
+    border: 3px rgb(6, 109, 11) solid;
+}
+.times{
+    display: block;
+    color: blue;
+}
+label{
+    float: left;
+}
+#rangespan{
+    margin-right: 50px;
+    color: green;
+}
+#myrange{
+    margin-left: 44px;
+    width: 200px;
+}
+div:hover{
+    border: 2px green solid;
+    opacity: 100%;
+}
+.quote{
+    color: rgb(4, 134, 91);
+}
+#active{
+    background-color: green;
+    color: blue;
+}
+#section1{
+    margin-top: 30px;
+}
+.number{
+    font-family: 'Almarai', sans-serif;
+}
+.one{
+    color: green;
+}
+.three{
+    color: red;
+}
+.ten{
+    color:blue;
+}
+.four{
+    color: blue;
+}
+.seven{
+    color: blue;
+}
+span{
+    display: inline-block;
+    text-align: center;
+    color: gold;
+    margin-bottom: 10px;
+    margin-left: 53px;
+}
+input{
+    font-size:xxx-large;
+    border-radius:10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 43px;
+    margin-left: 34px;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(6, 109, 11);
+    border: 2px rgb(138, 2, 2) solid;
+}
+input:hover{
+    border: 3px green solid;
+    background-color: rgb(138, 2, 2);
+}
+#color{
+    color: red;
+}
+.refresh{
+    float: right;
+    background-color: transparent;
+    border: 0ch;
+    border-radius: 15px;
+}
+.refresh:hover{
+    border: 1px black solid;
+}
