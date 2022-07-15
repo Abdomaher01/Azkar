@@ -49,7 +49,7 @@ function decrementdiv(sectionid){
         }
       }
     }
-}
+}    
 function refresh_element(value,buttonid){
     if (document.getElementById(buttonid).value==0){
         counter-=1
@@ -72,72 +72,45 @@ function refresh_element(value,buttonid){
     else{
         document.getElementById(buttonid).value=101;
     }
+
+
 }
 document.getElementById('tahleel_times').addEventListener("change",function changevalue(){
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){
-        var select=document.getElementById("tahleel_times");
+    var select=document.getElementById("tahleel_times");
         var strvalue=select.options[select.selectedIndex].value;
         var value=parseInt(strvalue);
-        if (value==100){
-            document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
-            document.getElementById("tahleel").innerHTML= "مئة مرة";
-            document.getElementById("tahleel").className= "hundred";
-            
-        }
-        else{
-            document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('ten','button24')");
-            document.getElementById("tahleel").innerHTML= "عشر مرات";
-            document.getElementById("tahleel").className= "ten";
-        }
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){
     }
     else{
-        var select=document.getElementById("tahleel_times");
-        var strvalue=select.options[select.selectedIndex].value;
-        var value=parseInt(strvalue);
         document.getElementById("button24").value = value+1;
-        if (value==100){
-            document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
-            document.getElementById("tahleel").innerHTML= "مئة مرة";
-            document.getElementById("tahleel").className= "hundred";
+    }        
+    if(value==100){
+        document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
+        document.getElementById("tahleel").innerHTML= "مئة مرة";
+        document.getElementById("tahleel").className= "hundred";
         }
-        else{
-            document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('ten','button24')");
-            document.getElementById("tahleel").innerHTML= "عشر مرات";
-            document.getElementById("tahleel").className= "ten";
-        }
+    else{
+        document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('ten','button24')");
+        document.getElementById("tahleel").innerHTML= "عشر مرات";
+        document.getElementById("tahleel").className= "ten";
     }
 })
 document.getElementById('tasbeh_times').addEventListener("change",function changevalue(){
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){
-        var select=document.getElementById("tasbeh_times");
-        var strvalue=select.options[select.selectedIndex].value;
-        var value=parseInt(strvalue);
-        document.getElementById("button25").value = value;
-        if (value==100){
+    var select=document.getElementById("tasbeh_times");
+    var strvalue=select.options[select.selectedIndex].value;
+    var value=parseInt(strvalue);
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){}
+    else{
+        document.getElementById("button25").value = value+1;
+    }
+    if (value==100){
             document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
             document.getElementById("tasbeh").innerHTML= "مئة مرة";
             document.getElementById("tasbeh").className= "hundred";
-        }
-        else{
-            document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('ten','button25')");
-            document.getElementById("tasbeh").innerHTML= "عشر مرات";
-            document.getElementById("tasbeh").className= "ten";
-        }
     }
     else{
-        var select=document.getElementById("tasbeh_times");
-        var strvalue=select.options[select.selectedIndex].value;
-        var value=parseInt(strvalue);
-        document.getElementById("button25").value = value+1;
-        if (value==100){
-            document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
-            document.getElementById("tasbeh").innerHTML= "مئة مرة";
-            document.getElementById("tasbeh").className= "hundred";
-        }
-        else{
-            document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('ten','button25')");
-            document.getElementById("tasbeh").innerHTML= "عشر مرات";
-            document.getElementById("tasbeh").className= "ten";
-    }
+        document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('ten','button25')");
+        document.getElementById("tasbeh").innerHTML= "عشر مرات";
+        document.getElementById("tasbeh").className= "ten";
     }
 })
