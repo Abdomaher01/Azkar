@@ -25,7 +25,6 @@ document.getElementById("myrange").addEventListener('change',function change_fon
         body.style.fontSize = "medium";
     }
 })
-
 var counter = 0;
 function decrementdiv(sectionid){
     var stringlength=sectionid.length;
@@ -73,8 +72,6 @@ function refresh_element(value,buttonid){
     else{
         document.getElementById(buttonid).value=101;
     }
-
-
 }
 document.getElementById('tahleel_times').addEventListener("change",function changevalue(){
     var select=document.getElementById("tahleel_times");
