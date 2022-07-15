@@ -81,7 +81,6 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
     else{
         document.getElementById("button24").value = value+1;
     }
-    document.getElementById("button24").value = value+1;
     if (value==100){
         document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
         document.getElementById("tahleel").innerHTML= "مئة مرة";
