@@ -40,6 +40,11 @@ div{
     margin-top: 30px;
     opacity: 95%;
 }
+.footer:hover{
+    background-color: gold;
+    color: gray;
+    border: 3px gray solid;
+}
 select{
     border-radius: 7px;
     font-size: x-large;
