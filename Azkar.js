@@ -25,6 +25,7 @@ document.getElementById("myrange").addEventListener('change',function change_fon
         body.style.fontSize = "medium";
     }
 })
+
 var counter = 0;
 function decrementdiv(sectionid){
     var stringlength=sectionid.length;
@@ -44,7 +45,8 @@ function decrementdiv(sectionid){
         document.getElementById(button).value= value;
         if(value==0){
             counter++;
-            if (counter==document.getElementById("checkempty").children.length){
+            console.log(counter)
+            if (counter==document.getElementById("checkempty").children.length-1){
                 alert("بارك الله فيك")
         }
       }
@@ -53,6 +55,7 @@ function decrementdiv(sectionid){
 function refresh_element(value,buttonid){
     if (document.getElementById(buttonid).value==0){
         counter-=1
+        console.log(counter)
     }
     if(value=="ten"){
         document.getElementById(buttonid).value=11;
@@ -78,6 +81,9 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
     var strvalue=select.options[select.selectedIndex].value;
     var value=parseInt(strvalue);
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        if(document.getElementById("button24").value==0){
+            counter-=1;
+        }
         document.getElementById("button24").value = value;
         if (value==100){
             document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
@@ -91,6 +97,10 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
         }
     }
     else{
+        if(document.getElementById("button24").value==0){
+            counter-=1;
+            console.log(counter)
+        }
         document.getElementById("button24").value = value+1;
         if (value==100){
             document.getElementById("refresh_tahleel").setAttribute("onclick","javascript: refresh_element('hundred','button24')");
@@ -109,10 +119,13 @@ document.getElementById('tasbeh_times').addEventListener("change",function chang
     var strvalue=select.options[select.selectedIndex].value;
     var value=parseInt(strvalue);
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        if(document.getElementById("button25").value==0){
+            counter-=1;
+        }
         document.getElementById("button25").value = value;
         if (value==100){
-        document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
-        document.getElementById("tasbeh").innerHTML= "مئة مرة";
+            document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
+            document.getElementById("tasbeh").innerHTML= "مئة مرة";
         document.getElementById("tasbeh").className= "hundred";
     }
     else{
@@ -120,14 +133,17 @@ document.getElementById('tasbeh_times').addEventListener("change",function chang
         document.getElementById("tasbeh").innerHTML= "عشر مرات";
         document.getElementById("tasbeh").className= "ten";
     }
-    }
-    
-    else{
+}
+else{
+    if(document.getElementById("button25").value==0){
+            counter-=1;
+            console.log(counter)
+        }
         document.getElementById("button25").value = value+1;    
         if (value==100){
-        document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
-        document.getElementById("tasbeh").innerHTML= "مئة مرة";
-        document.getElementById("tasbeh").className= "hundred";
+            document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('hundred','button25')");
+            document.getElementById("tasbeh").innerHTML= "مئة مرة";
+            document.getElementById("tasbeh").className= "hundred";
         }
         else{
             document.getElementById("refresh_tasbeh").setAttribute("onclick","javascript: refresh_element('ten','button25')");
