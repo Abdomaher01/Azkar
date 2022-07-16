@@ -1,22 +1,23 @@
 document.getElementById("myrange").addEventListener('change',function change_font_size(){
     var myrange=document.getElementById("myrange");
-    if(myrange.value>90){
+    var value=parseInt(myrange.value)
+    if(value>90){
         var body=document.getElementById("body");
         body.style.fontSize = "xxx-large";
     }
-    else if(myrange.value<90 && myrange.value>72){
+    else if(value<90 && value>72){
         var body=document.getElementById("body");
         body.style.fontSize = "xx-large";
     }
-    else if(myrange.value<72 && myrange.value>54){
+    else if(value<72 && value>54){
         var body=document.getElementById("body");
         body.style.fontSize = "x-large";
     }
-    else if(myrange.value<54 && myrange.value>36){
+    else if(value<54 && value>36){
         var body=document.getElementById("body");
         body.style.fontSize = "larger";
     }
-    else if(myrange.value<36 && myrange.value>16){
+    else if(value<36 && value>16){
         var body=document.getElementById("body");
         body.style.fontSize = "large";
     }
@@ -45,7 +46,6 @@ function decrementdiv(sectionid){
         document.getElementById(button).value= value;
         if(value==0){
             counter++;
-            console.log(counter)
             if (counter==document.getElementById("checkempty").children.length-1){
                 alert("بارك الله فيك")
         }
@@ -55,7 +55,6 @@ function decrementdiv(sectionid){
 function refresh_element(value,buttonid){
     if (document.getElementById(buttonid).value==0){
         counter-=1
-        console.log(counter)
     }
     if(value=="ten"){
         document.getElementById(buttonid).value=11;
@@ -99,7 +98,7 @@ document.getElementById('tahleel_times').addEventListener("change",function chan
     else{
         if(document.getElementById("button24").value==0){
             counter-=1;
-            console.log(counter)
+
         }
         document.getElementById("button24").value = value+1;
         if (value==100){
@@ -137,7 +136,6 @@ document.getElementById('tasbeh_times').addEventListener("change",function chang
 else{
     if(document.getElementById("button25").value==0){
             counter-=1;
-            console.log(counter)
         }
         document.getElementById("button25").value = value+1;    
         if (value==100){
