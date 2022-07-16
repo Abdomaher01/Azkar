@@ -74,6 +74,9 @@ label{
     margin-left: 44px;
     width: 200px;
 }
+#final{
+    color: darkblue;
+}
 div:hover{
     border: 2px green solid;
     opacity: 100%;
