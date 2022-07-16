@@ -4,10 +4,12 @@ document.getElementById("myrange").addEventListener('change',function change_fon
     if(value>90){
         var body=document.getElementById("body");
         body.style.fontSize = "xxx-large";
+        document.getElementById("rangespan").style.fontSize = "x-large";
     }
     else if(value<90 && value>72){
         var body=document.getElementById("body");
         body.style.fontSize = "xx-large";
+        document.getElementById("rangespan").style.fontSize = "x-large";
     }
     else if(value<72 && value>54){
         var body=document.getElementById("body");
@@ -16,14 +18,17 @@ document.getElementById("myrange").addEventListener('change',function change_fon
     else if(value<54 && value>36){
         var body=document.getElementById("body");
         body.style.fontSize = "larger";
+        document.getElementById("rangespan").style.fontSize = "x-large";
     }
     else if(value<36 && value>16){
         var body=document.getElementById("body");
         body.style.fontSize = "large";
+        document.getElementById("rangespan").style.fontSize = "x-large";
     }
     else{
         var body=document.getElementById("body");
         body.style.fontSize = "medium";
+        document.getElementById("rangespan").style.fontSize = "x-large";
     }
 })
 
