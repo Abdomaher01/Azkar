@@ -1,3 +1,6 @@
+html{
+    font-size: x-large;
+}
 body{
     text-align: center;
     background-color: gray;
@@ -47,9 +50,16 @@ h2{
 }
 footer{
     padding: 15px;
-    background-color: green;
-    display: inline-block;
     border-radius: 15px;
+}
+footer a{
+    color: gold;
+    padding:12px;
+}
+footer a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    padding:12px;
 }
 a{
     text-decoration: none;
