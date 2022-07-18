@@ -50,6 +50,7 @@ function decrementdiv(sectionid){
         value-=1;
         document.getElementById(button).value= value;
         if(value==0){
+            document.getElementById(button).style.backgroundColor = "rgb(230, 0, 0)";
             counter++;
             if (counter==document.getElementById("checkempty").children.length-1){
                 alert("بارك الله فيك")
@@ -59,24 +60,31 @@ function decrementdiv(sectionid){
 }
 function refresh_element(value,buttonid){
     if (document.getElementById(buttonid).value==0){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         counter-=1
     }
     if(value=="ten"){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=11;
     }
     else if(value=="one"){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=2;
     }
     else if(value=="three"){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=4;
     }
     else if(value=="four"){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=5;
     }
     else if(value=="seven"){
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=8;
     }
     else{
+        document.getElementById(buttonid).style.backgroundColor = "rgb(0, 180, 9)";
         document.getElementById(buttonid).value=101;
     }
 }
