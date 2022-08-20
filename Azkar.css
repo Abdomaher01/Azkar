@@ -8,6 +8,7 @@
 }
 html{
     touch-action: manipulation;
+    background-image:linear-gradient(rgb(4, 23, 39) 0px, rgb(6, 43, 63) 100%);;
 }
 header{
     background-color: rgb(255, 227, 71);
